@@ -104,37 +104,6 @@ public class GeometricTransform {
 
 		double s = perspectiveDistortion;
 
-
-
-
-		for(int yDst = 0; yDst < dst.height; yDst++) {
-			for (int xDst = 0; xDst < dst.width; xDst++) {
-
-				int xDstC = xDst - (dst.width / 2);
-				int yDstC = yDst - (dst.height / 2);
-
-				int ySrcC = (int) (yDstC / (cos - (yDstC * s * sin)));
-				int xSrcC = (int) (xDstC * (s * sin * ySrcC + 1));
-
-				int xSrc = xSrcC + (src.width / 2);
-				int ySrc = ySrcC + (src.height / 2);
-
-				int srcRGB;
-
-				int posDst = yDst * dst.width + xDst;
-				int posSrc;
-
-				if (ySrc > src.height - 1 || ySrc < 0 || xSrc > src.width - 1 || xSrc < 0) {
-					srcRGB = 0xFFFFFFFF;
-				} else {
-					posSrc = ySrc * src.width + xSrc;
-					srcRGB = src.argb[posSrc];
-
-				}
-				dst.argb[posDst] = srcRGB;
-			}
-		}
-
 		for(int yDst = 0;yDst<dst.height;yDst++){
 			for(int xDst = 0;xDst<dst.width;xDst++){
 
@@ -147,48 +116,68 @@ public class GeometricTransform {
 				double ySrcC = (yDstC / (cos - (yDstC * s * sin)));
 				double xSrcC = (xDstC * (s * sin * ySrcC + 1));
 
+
+				 //nur floor
 				double xSrc = (xSrcC + (src.width / 2));
-				int xSrcCeil = (int) Math.ceil(xSrcC + (src.width / 2));
+				//int xSrcCeil = (int) Math.ceil(xSrcC + (src.width / 2));
 				int xSrcFloor = (int) Math.floor(xSrcC + (src.width / 2));
-				int xSrcRound = (int) Math.round(xSrcC + (src.width / 2));
+				//int xSrcRound = (int) Math.round(xSrcC + (src.width / 2));
 
 
 				double ySrc = (ySrcC + (src.height / 2));
-				int ySrcCeil = (int) Math.ceil(ySrcC + (src.height / 2));
+				//int ySrcCeil = (int) Math.ceil(ySrcC + (src.height / 2));
 				int ySrcFloor = (int) Math.floor(ySrcC + (src.height / 2));
-				int ySrcRound = (int) Math.round(ySrcC + (src.height / 2));
+				//int ySrcRound = (int) Math.round(ySrcC + (src.height / 2));
 
-				double v1 = ySrcCeil - ySrc;
-				double v2 = ySrc - ySrcFloor;
-				double h1 = xSrcCeil - xSrc;
-				double h2 = xSrc - xSrcFloor;
+				//double v1 = ySrcCeil - ySrc;
+				//double v2 = ySrc - ySrcFloor;
+				//double h1 = xSrcCeil - xSrc;
+				//double h2 = xSrc - xSrcFloor;
 
-				double v;
-				double h;
+				double v = xSrc - xSrcFloor;
+				double h = ySrc - ySrcFloor;
 
-				v = Math.min(v1, v2);
+				//v = Math.min(v1, v2);
+				//h = Math.min(h1, h2);
 
-				h = Math.min(h1, h2);
-
-
-
-				int rgbA;
-				int rgbB;
-				int rgbC;
-				int rgbD;
-				if(ySrcRound >= src.height-1 || xSrcRound >= src.width-1 || ySrcRound<0 || xSrcRound<0){
+				int rgbA = 0;
+				int rgbB = 0;
+				int rgbC = 0;
+				int rgbD = 0;
+				if(ySrcFloor >= src.height-1 || xSrcFloor >= src.width-1 || ySrcFloor<0 || xSrcFloor<0){
 					rgbA = 0xFFFFFFFF;
 					rgbB = 0xFFFFFFFF;
 					rgbC = 0xFFFFFFFF;
 					rgbD = 0xFFFFFFFF;
 				}else{
-					rgbA = src.argb[pos(xSrcRound,ySrcRound,src.width)];
-					rgbB = src.argb[pos(xSrcRound+1,ySrcRound,src.width)];
-					rgbC = src.argb[pos(xSrcRound,ySrcRound+1,src.width)];
-					rgbD = src.argb[pos(xSrcRound+1,ySrcRound+1,src.width)];
+					rgbA = src.argb[pos(xSrcFloor,ySrcFloor,src.width)];
+					rgbB = src.argb[pos(xSrcFloor,ySrcFloor+1,src.width)];
+					rgbC = src.argb[pos(xSrcFloor+1,ySrcFloor,src.width)];
+					rgbD = src.argb[pos(xSrcFloor+1,ySrcFloor+1,src.width)];
 				}
 
-
+				/*if(ySrcRound <= src.height-1 && xSrcRound <= src.width-1 && ySrcRound>0 && xSrcRound>0){
+					rgbA = src.argb[pos(xSrcRound,ySrcRound,src.width)];
+				}
+				if(xSrcRound >= src.width-1){
+					rgbB = 0xFFFFFFFF;
+				}else{
+					rgbB = src.argb[pos(xSrcRound,ySrcRound+1,src.width)];
+				}
+				if(ySrcRound >= src.height-1){
+					rgbC = 0xFFFFFFFF;
+				}else{
+					rgbC = src.argb[pos(xSrcRound+1,ySrcRound,src.width)];
+				}
+				if(xSrcRound >= src.width-1 && ySrcRound >= src.height-1){
+					rgbD = 0xFFFFFFFF;
+				}else if(xSrcRound >= src.width-1 && ySrcRound != src.height-1){
+					rgbD = src.argb[pos(xSrcRound,ySrcRound+1,src.width)];
+				}else if(xSrcRound != src.width-1 && ySrcRound >= src.height-1){
+					rgbD = src.argb[pos(xSrcRound+1,ySrcRound,src.width)];
+				}else{
+					rgbD = src.argb[pos(xSrcRound+1,ySrcRound+1,src.width)];
+				}*/
 
 				int rA = (rgbA >> 16) & 0xff;
 				int gA = (rgbA >> 8) & 0xff;
@@ -213,114 +202,6 @@ public class GeometricTransform {
 				dst.argb[posDst] = (0xff << 24) | (rNew << 16) | (gNew << 8) | (bNew);
 			}
 		}
-
-
-
-		/*int dstW = (int) ((src.width/2) * (s * sin * (src.width/2) + 1));
-		int dstH = (int) ((src.height) / (cos - ((src.height/2) * s * sin)));
-
-			for(int yDst = 0;yDst<dst.height;yDst++){
-				for(int xDst = 0;xDst<dst.width;xDst++){
-
-					int xDstC = xDst - (dst.width / 2);
-					int yDstC = yDst - (dst.height / 2);
-
-					int ySrcC = (int) (yDstC / (cos - (yDstC * s * sin)));
-					int xSrcC = (int) (xDstC * (s * sin * ySrcC + 1));
-
-					int xSrc = xSrcC + (src.width / 2);
-					int ySrc = ySrcC + (src.height / 2);
-
-					int rgbA = 0;
-					int rgbB = 0;
-					int rgbC = 0;
-					int rgbD = 0;
-
-
-					double ratioW = src.width/dstW;
-					double ratioH = src.height/dstH;
-
-					int altX = (int) Math.round(ratioW * xDst);
-					int altY = (int) Math.round(ratioH * yDst);
-
-					double h = ratioW * xSrc - altX;
-					double v = ratioH * ySrc - altY;
-
-					rgbA = src.argb[pos(altX, altY, src.width)];
-					if (altX == src.width - 1) {
-						rgbB = src.argb[pos(altX, altY, src.width)];
-					}
-					else {
-						rgbB = src.argb[pos(altX + 1, altY, src.width)];
-					}
-
-					if (altY == src.height - 1) {
-						rgbC = src.argb[pos(altX, altY, src.width)];
-					}
-					else {
-						rgbC = src.argb[pos(altX, altY + 1, src.width)];
-					}
-
-					if (altX == src.width - 1 && altY == src.height - 1) {
-						rgbD = src.argb[pos(altX, altY, src.width)];
-					}
-					else if (altX == src.width - 1 && altY != src.height - 1) {
-						rgbD = src.argb[pos(altX, altY + 1, src.width)];
-					}
-					else if (altX != src.width - 1 && altY == src.height - 1) {
-						rgbD = src.argb[pos(altX + 1, altY, src.width)];
-					}
-					else {
-						rgbD = src.argb[pos(altX + 1, altY + 1, src.width)];
-					}
-
-					// RGB extrahieren
-					int rA = (rgbA >> 16) & 0xff;
-					int gA = (rgbA >> 8) & 0xff;
-					int bA = rgbA & 0xff;
-					int rB = (rgbB >> 16) & 0xff;
-					int gB = (rgbB >> 8) & 0xff;
-					int bB = rgbB & 0xff;
-					int rC = (rgbC >> 16) & 0xff;
-					int gC = (rgbC >> 8) & 0xff;
-					int bC = rgbC & 0xff;
-					int rD = (rgbD >> 16) & 0xff;
-					int gD = (rgbD >> 8) & 0xff;
-					int bD = rgbD & 0xff;
-
-					// Formel von den Folien
-					int rNew = (int) Math.round(rA * (1 - h) * (1 - v) + rB * h * (1 - v) + rC * (1 - h) * v + rD * h * v);
-					int gNew = (int) Math.round(gA * (1 - h) * (1 - v) + gB * h * (1 - v) + gC * (1 - h) * v + gD * h * v);
-					int bNew = (int) Math.round(bA * (1 - h) * (1 - v) + bB * h * (1 - v) + bC * (1 - h) * v + bD * h * v);
-
-					// overrun correction
-					if (rNew > 255) {
-						rNew = 255;
-					}
-					else if (rNew < 0) {
-						rNew = 0;
-					}
-					if (gNew > 255) {
-						gNew = 255;
-					}
-					else if (gNew < 0) {
-						gNew = 0;
-					}
-					if (bNew > 255) {
-						bNew = 255;
-					}
-					else if (bNew < 0) {
-						bNew = 0;
-					}
-
-
-					int posDst = yDst * dst.width + xDst;
-					dst.argb[posDst] = (0xff << 24) | (rNew << 16) | (gNew << 8) | (bNew);
-
-				}
-
-
-				}*/
 			}
 
 
