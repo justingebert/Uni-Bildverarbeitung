@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BV1_Rehtanz_Gebert/BV1_Rehtanz_Gebert.iml" filepath="$PROJECT_DIR$/BV1_Rehtanz_Gebert/BV1_Rehtanz_Gebert.iml" />
       <module fileurl="file://$PROJECT_DIR$/BV2_Rehtanz_Gebert/BV2_Rehtanz_Gebert.iml" filepath="$PROJECT_DIR$/BV2_Rehtanz_Gebert/BV2_Rehtanz_Gebert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BV3_Rehtanz_Gebert/BV3_Rehtanz_Gebert.iml" filepath="$PROJECT_DIR$/BV3_Rehtanz_Gebert/BV3_Rehtanz_Gebert.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Bildverarbeitung.iml" filepath="$PROJECT_DIR$/.idea/Bildverarbeitung.iml" />
     </modules>
   </component>
