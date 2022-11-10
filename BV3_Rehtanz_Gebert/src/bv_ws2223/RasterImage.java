@@ -20,7 +20,7 @@ public class RasterImage {
  		   		    	 	
 	private static final int gray  = 0xffa0a0a0;
 	private static final int white = 0xFFFFFFFF;
-	private static final int black = 0x000000;
+	private static final int black = 0xFF000000;
 
 	public int[] argb;	// pixels represented as ARGB values in scanline order
 	public int width;	// image width in pixels
@@ -87,11 +87,21 @@ public class RasterImage {
 				int pos = y*width + x;
 				int pix = argb[pos];
 				int r = (pix >> 16) & 0xff;
-				if(threshold>r){
-					pix = black;
+				int g = (pix >> 8) & 0xff;
+				int b =  pix & 0xff;
+
+				int graustufen = (r+g+b)/3;
+
+				if(graustufen<threshold){
+					r = 0;
+					b = 0;
+					g = 0;
 				}else{
-					pix = white;
+					r = 255;
+					g = 255;
+					b = 255;
 				}
+				argb[pos] =  (0xff << 24) | (r << 16) | (g << 8) | (b);
 			}
 		}
 	}
