@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df62ee05-b69e-4438-821e-dff800a85f11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/BV3_Rehtanz_Gebert/bv_ws2223/MorphologicFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/BV3_Rehtanz_Gebert/bv_ws2223/MorphologicFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/BV3_Rehtanz_Gebert/bv_ws2223/RasterImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/BV3_Rehtanz_Gebert/bv_ws2223/RasterImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/MorphologicFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/MorphologicFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +66,8 @@
       <workItem from="1668091611571" duration="787000" />
       <workItem from="1668092448911" duration="463000" />
       <workItem from="1668093040935" duration="6034000" />
+      <workItem from="1668973620061" duration="59000" />
+      <workItem from="1669050566650" duration="6000" />
     </task>
     <servers />
   </component>
