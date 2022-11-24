@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/MorphologicFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/MorphologicFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Main.java" afterDir="false" />
+    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="BV4 curve and histo">
       <change beforePath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +56,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669304035655</updated>
-      <workItem from="1669305438293" duration="4946000" />
+      <workItem from="1669305438293" duration="5576000" />
     </task>
+    <task id="LOCAL-00001" summary="BV4 curve and histo">
+      <created>1669310589259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669310589259</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,19 +82,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java</url>
-          <line>28</line>
-          <properties class="bv_ws2223.ToneCurve" method="updateTable">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BV4 curve and histo" />
+    <option name="LAST_COMMIT_MESSAGE" value="BV4 curve and histo" />
   </component>
 </project>

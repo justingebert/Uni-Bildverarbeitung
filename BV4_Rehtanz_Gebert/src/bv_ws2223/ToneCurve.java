@@ -45,7 +45,18 @@ public class ToneCurve {
 	}
 	
 	public void applyTo(RasterImage image) {
-		
+		for(int y = 0;y<image.height;y++){
+			for(int x = 0; x< image.width;x++){
+				int pos = y*image.width+x;
+				int argb = image.argb[pos];
+
+				int r =(argb >> 16) & 0xff;
+
+				r = 255-grayTable[r];
+
+				image.argb[pos] = (0xFF<<24) | (r<<16) | (r<<8) | r;
+			}
+		}
 		// TODO: apply the gray value mapping to the given image
 
 	}
