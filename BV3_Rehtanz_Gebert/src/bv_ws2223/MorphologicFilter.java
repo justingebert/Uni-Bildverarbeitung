@@ -37,6 +37,7 @@ public class MorphologicFilter {
 								int iC = i-kernel.length/2;
 								int jC = j-kernel[i].length/2;
 								int newPos = (y+iC)*src.width + x+jC;
+								//randbehandlung mit x+jc und y+jc
 								if(newPos>0 && newPos<src.argb.length-1){
 									int rNew = 0;
 									int gNew = 0;
@@ -62,7 +63,9 @@ public class MorphologicFilter {
 		dst.invert();
 		src.invert();
 	}
-	
+
+
+	//falschrum um drehen
 	public void opening(RasterImage src, RasterImage dst, boolean[][] kernel) {
 		// TODO: implement opening by using dilation() and erosion()
 		RasterImage imgD = new RasterImage(src.width, src.height);

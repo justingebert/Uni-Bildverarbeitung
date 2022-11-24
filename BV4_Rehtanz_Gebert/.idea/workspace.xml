@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/GeometricTransform$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/GeometricTransform$InterpolationType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/GeometricTransform.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/PerspectiveAppController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/RasterImage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/MorphologicFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/MorphologicFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/src/bv_ws2223/RasterImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +27,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bv_ws2223.Main" />
@@ -67,7 +62,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669304035655</updated>
+      <workItem from="1669305438293" duration="4946000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java</url>
+          <line>28</line>
+          <properties class="bv_ws2223.ToneCurve" method="updateTable">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
