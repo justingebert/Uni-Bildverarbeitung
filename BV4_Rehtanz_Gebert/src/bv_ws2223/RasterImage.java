@@ -97,9 +97,28 @@ public class RasterImage {
 	// image point operations to be added here
 
 	public void convertToGray() {
-		
 		// TODO: convert the image to grayscale
+		for(int x = 0; x<width;x++){
+			for(int y = 0;y<height;y++){
+				int pos = y * width +x;
+				//argb[pos] = 0xffff0000;
 
+				int rgb = argb[pos];
+
+				int r =(rgb >> 16) & 0xff;
+				int g =(rgb >> 8) & 0xff;
+				int b =(rgb >> 0) & 0xff;
+
+				int avg = (r+g+b)/3;
+
+				r = avg;
+				g = avg;
+				b = avg;
+
+				argb[pos] = (0xFF<<24) | (r<<16) | (g<<8) | b;
+
+			}
+		}
 	}
  		   		    	 
 	public RasterImage getOverlayImage(int regionSize, Visualization visualization, double threshold) {

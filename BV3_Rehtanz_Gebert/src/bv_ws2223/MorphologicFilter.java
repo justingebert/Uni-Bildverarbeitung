@@ -78,10 +78,6 @@ public class MorphologicFilter {
 		dilation(imgD,dst,kernel);
 
 	}
-	
-	
- 		   		    	 	
-	
 
 }
  		   		    	 

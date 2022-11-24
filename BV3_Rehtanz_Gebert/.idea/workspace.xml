@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df62ee05-b69e-4438-821e-dff800a85f11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/GeometricTransform$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/GeometricTransform$InterpolationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/GeometricTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/PerspectiveAppController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV2_Rehtanz_Gebert/classes/production/BV2_Rehtanz_Gebert/bv_ws2223/RasterImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/MorphologicFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/MorphologicFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV4_Rehtanz_Gebert/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV4_Rehtanz_Gebert/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV4_Rehtanz_Gebert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV4_Rehtanz_Gebert/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,17 +33,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Justin/Documents/PROJECTS/Uni/Bildverarbeitung/BV3_Rehtanz_Gebert/.project&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
-  }
-}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bv_ws2223.Main" />
