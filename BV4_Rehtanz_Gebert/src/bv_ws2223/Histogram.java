@@ -10,6 +10,8 @@ package bv_ws2223;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
+import java.util.Arrays;
+
 public class Histogram {
  		   		    	 
 	private static final int grayLevels = 256;
@@ -55,27 +57,53 @@ public class Histogram {
 	
 	public Integer getMinimum() {
 		// Will be used in Exercise 5.
-		return null;
+		int min = Integer.MAX_VALUE;
+		for(int i = 0;i<histogram.length;i++){
+			if(histogram[i]<min) min = histogram[i];
+		}
+		return min;
 	}
  		   		    	 
 	public Integer getMaximum() {
 		// Will be used in Exercise 5.
-		return null;
+		int max = Integer.MIN_VALUE;
+		for(int i = 0;i<histogram.length;i++){
+			if(histogram[i]>max) max = histogram[i];
+		}
+		return max;
 	}
  		   		    	 
 	public Double getMean() {
 		// Will be used in Exercise 5.
-		return null;
+		double mean = 0;
+		for(int i = 0;i<histogram.length;i++){
+			mean += histogram[i];
+		}
+		mean = mean/(double)histogram.length;
+		return mean;
 	}
  		   		    	 
 	public Integer getMedian() {
 		// Will be used in Exercise 5.
-		return null;
+		int median;
+		int [] sorted = new int[histogram.length];
+		System.arraycopy(histogram,0,sorted,0,histogram.length);
+		Arrays.sort(sorted);
+		int mid = histogram.length/2;
+		median = sorted[mid];
+		return median;
 	}
  		   		    	 
 	public Double getVariance() {
 		// Will be used in Exercise 5.
-		return null;
+		double variance = 0;
+		double mean = this.getMean();
+		for(int i = 0;i<histogram.length;i++){
+			double cur = histogram[i]-mean;
+			variance += Math.pow(cur,2);
+		}
+		variance *= 1.0 /histogram.length;
+		return variance;
 	}
  		   		    	 
 	public Double getEntropy() {

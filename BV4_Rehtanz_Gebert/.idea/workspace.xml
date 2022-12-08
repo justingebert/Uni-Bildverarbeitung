@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="BV4 curve and histo">
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" afterDir="false" />
+    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="finish BV4">
+      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +24,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bv_ws2223.Main" />
@@ -56,7 +59,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669304035655</updated>
-      <workItem from="1669305438293" duration="5576000" />
+      <workItem from="1669305438293" duration="5806000" />
+      <workItem from="1669385004991" duration="59000" />
+      <workItem from="1669583697466" duration="410000" />
+      <workItem from="1669883410550" duration="1554000" />
+      <workItem from="1670508303245" duration="1477000" />
+      <workItem from="1670510855058" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="BV4 curve and histo">
       <created>1669310589259</created>
@@ -65,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669310589259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish BV4">
+      <created>1669311281564</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669311281564</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BV4 curve and histo" />
-    <option name="LAST_COMMIT_MESSAGE" value="BV4 curve and histo" />
+    <MESSAGE value="finish BV4" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish BV4" />
   </component>
 </project>
