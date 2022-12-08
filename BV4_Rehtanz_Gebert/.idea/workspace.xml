@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="finish BV4">
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BV3_Rehtanz_Gebert/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bv_ws2223/Antworten.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
       <workItem from="1669883410550" duration="1554000" />
       <workItem from="1670508303245" duration="1477000" />
       <workItem from="1670510855058" duration="160000" />
+      <workItem from="1670511062215" duration="10696000" />
     </task>
     <task id="LOCAL-00001" summary="BV4 curve and histo">
       <created>1669310589259</created>

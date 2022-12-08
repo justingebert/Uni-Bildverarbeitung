@@ -54,33 +54,38 @@ public class Histogram {
 		// TODO: calculate histogram[] out of the gray values found the given image region
 
 	}
-	
+
 	public Integer getMinimum() {
 		// Will be used in Exercise 5.
-		int min = Integer.MAX_VALUE;
 		for(int i = 0;i<histogram.length;i++){
-			if(histogram[i]<min) min = histogram[i];
+			if(histogram[i] != 0) return i;
 		}
-		return min;
+		return 0;
 	}
  		   		    	 
 	public Integer getMaximum() {
 		// Will be used in Exercise 5.
-		int max = Integer.MIN_VALUE;
-		for(int i = 0;i<histogram.length;i++){
-			if(histogram[i]>max) max = histogram[i];
+		for(int i = histogram.length;i<=0;i--){
+			if(histogram[i] != 0) return i;
 		}
-		return max;
+		return 255;
 	}
  		   		    	 
 	public Double getMean() {
 		// Will be used in Exercise 5.
 		double mean = 0;
+		int count = 0;
 		for(int i = 0;i<histogram.length;i++){
-			mean += histogram[i];
+			if(histogram[i] != 0){
+				count += histogram[i];
+			}
 		}
-		mean = mean/(double)histogram.length;
-		return mean;
+		for(int i = 0;i<histogram.length;i++){
+			if(histogram[i] != 0) {
+				mean += i*histogram[i];
+			}
+		}
+		return mean/(double)count;
 	}
  		   		    	 
 	public Integer getMedian() {
@@ -91,24 +96,49 @@ public class Histogram {
 		Arrays.sort(sorted);
 		int mid = histogram.length/2;
 		median = sorted[mid];
+		/*for(int i = 0;i<histogram.length;i++){
+			median += i*histogram[i];
+		}*/
+
 		return median;
 	}
  		   		    	 
 	public Double getVariance() {
 		// Will be used in Exercise 5.
 		double variance = 0;
+		int count = 0;
 		double mean = this.getMean();
 		for(int i = 0;i<histogram.length;i++){
-			double cur = histogram[i]-mean;
-			variance += Math.pow(cur,2);
+			if(histogram[i] != 0){
+				count += histogram[i];
+			}
 		}
-		variance *= 1.0 /histogram.length;
+		for(int i = 0;i<histogram.length;i++){
+			if(histogram[i] != 0){
+				double cur = Math.pow((i-mean),2)*histogram[i]/count;
+				variance += cur;
+			}
+		}
 		return variance;
 	}
  		   		    	 
 	public Double getEntropy() {
-		// Will be used in Exercise 5.
-		return null;
+		// Will be used in Exercise 5.\
+		double entropie = 0;
+		int count = 0;
+		for(int i = 0;i<histogram.length;i++){
+			if(histogram[i] != 0){
+				count += histogram[i];
+			}
+		}
+		for(int i = 0;i<histogram.length;i++){
+			if(histogram[i] != 0){
+				double p = (double)histogram[i]/(double)count;
+				entropie += p*(Math.log(p) / Math.log(2));
+			}
+		}
+		return -entropie;
+
 	}
  		   		    	 
 	public void draw(Color lineColor) {

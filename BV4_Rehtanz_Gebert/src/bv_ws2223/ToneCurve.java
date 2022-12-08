@@ -32,7 +32,7 @@ public class ToneCurve {
 		for(int i = 0; i<minInput; i++){
 			grayTable[i] = 255-minOutput;
 		}
-		for(int j = maxInput; j < 255; j++){
+		for(int j = maxInput; j <= 255; j++){
 			grayTable[j] = 255-maxOutput;
 		}
 		for(int i = minInput; i<=maxInput;i++){

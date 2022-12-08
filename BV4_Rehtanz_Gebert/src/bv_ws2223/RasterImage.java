@@ -129,8 +129,25 @@ public class RasterImage {
 		// statistical property locally exceeds the given threshold. 
 		// Use a sliding window of size regionSize x regionSize.
 		// Use "switch(visualization)" to determine, what statistical property should be used
-		
-		return null;
+		RasterImage overlay = new RasterImage(width,height, 0x4000ff00);
+		Histogram histo = new Histogram();
+
+		if(visualization == Visualization.ENTROPY){
+			for(int y = 0;y<height;y++){
+				for(int x = 0;x<width;x++){
+					int pos = y*width + x;
+					if(x-regionSize ){
+						histo.setImageRegion(this,x,y,regionSize,regionSize);
+						double entro = histo.getEntropy();
+						if(entro> threshold) overlay.argb[pos] = 0x4000ff00;
+						else overlay.argb[pos] = 0x00000000;
+					}
+
+				}
+			}
+		}
+
+		return overlay;
 	}
  		   		    	 
 }
