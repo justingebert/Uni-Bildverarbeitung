@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="finish BV4">
-      <change afterPath="$PROJECT_DIR$/src/bv_ws2223/Antworten.txt" afterDir="false" />
+    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="continue u5">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Histogram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/ToneCurve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
@@ -66,7 +65,12 @@
       <workItem from="1669883410550" duration="1554000" />
       <workItem from="1670508303245" duration="1477000" />
       <workItem from="1670510855058" duration="160000" />
-      <workItem from="1670511062215" duration="10696000" />
+      <workItem from="1670511062215" duration="10740000" />
+      <workItem from="1670529048894" duration="216000" />
+      <workItem from="1670927252199" duration="85000" />
+      <workItem from="1672667732902" duration="28000" />
+      <workItem from="1672667974105" duration="27000" />
+      <workItem from="1672747147011" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="BV4 curve and histo">
       <created>1669310589259</created>
@@ -82,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669311281564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="continue u5">
+      <created>1670522082728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670522082728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BV4 curve and histo" />
     <MESSAGE value="finish BV4" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish BV4" />
+    <MESSAGE value="continue u5" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue u5" />
   </component>
 </project>

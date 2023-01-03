@@ -135,13 +135,40 @@ public class RasterImage {
 		if(visualization == Visualization.ENTROPY){
 			for(int y = 0;y<height;y++){
 				for(int x = 0;x<width;x++){
+					int xN = x+regionSize;
+					int yN = y+regionSize;
+					if(xN > width-1) xN = width-1;
+					else if(xN<0) xN = 0;
+					if(yN>height-1) yN = height-1;
+					else if(yN < 0) yN = 0;
+					int regionX = xN-x;
+					int regionY = yN-y;
+
 					int pos = y*width + x;
-					if(x-regionSize ){
-						histo.setImageRegion(this,x,y,regionSize,regionSize);
-						double entro = histo.getEntropy();
-						if(entro> threshold) overlay.argb[pos] = 0x4000ff00;
-						else overlay.argb[pos] = 0x00000000;
-					}
+					histo.setImageRegion(this,x,y,regionX,regionY);
+					double entro = histo.getEntropy();
+					if(entro> threshold) overlay.argb[pos] = 0x4000ff00;
+					else overlay.argb[pos] = 0x00000000;
+
+				}
+			}
+		}else if(visualization == Visualization.VARIANCE){
+			for(int y = 0;y<height;y++){
+				for(int x = 0;x<width;x++){
+					int xN = x+regionSize;
+					int yN = y+regionSize;
+					if(xN > width-1) xN = width-1;
+					else if(xN<0) xN = 0;
+					if(yN>height-1) yN = height-1;
+					else if(yN < 0) yN = 0;
+					int regionX = xN-x;
+					int regionY = yN-y;
+
+					int pos = y*width + x;
+					histo.setImageRegion(this,x,y,regionX,regionY);
+					double variance = histo.getVariance();
+					if(variance> threshold) overlay.argb[pos] = 0x4000ff00;
+					else overlay.argb[pos] = 0x00000000;
 
 				}
 			}
