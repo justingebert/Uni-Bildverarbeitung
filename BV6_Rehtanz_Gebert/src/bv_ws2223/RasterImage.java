@@ -85,10 +85,15 @@ public class RasterImage {
 		// TODO: convert the image to grayscale
 		
 	}
-	
+
+
 	public double getEntropy() {
 		
 		double entropy = Double.NaN;
+		Histogram histogram = new Histogram();
+		histogram.setImageRegion(this,0,0,this.width,this.height);
+		entropy = histogram.getEntropy();
+		//Histogram histogram = new Histogram(this,)
 		
 		// TODO: calculate and return the entropy of the image
 

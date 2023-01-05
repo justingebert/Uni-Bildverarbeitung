@@ -26,7 +26,7 @@ public class Main extends Application {
 		BorderPane root = (BorderPane)loadFXML("DPCMAppView.fxml");
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
-		primaryStage.setTitle("DPCM - WS2022/23 - <Your Name>"); // TODO: add your name(s)
+		primaryStage.setTitle("DPCM - WS2022/23 - <Rehtanz Gebert>"); // TODO: add your name(s)
 		primaryStage.show();
 	}
  		   		    	 
