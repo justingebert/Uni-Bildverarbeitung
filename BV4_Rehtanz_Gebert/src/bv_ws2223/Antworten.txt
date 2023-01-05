@@ -1,4 +1,4 @@
-1.
-2.
-3.
-4.
+1. Entropie bleibt gleich bis zum clip
+2. Entropie bleibt gleich bis zum clip
+3. Entropie wird kleiner
+4. Entropie wird kleiner

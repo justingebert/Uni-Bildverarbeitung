@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="continue u5">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="85758e4f-def4-4a59-b479-2b3fa5a9f232" name="Changes" comment="finih randbehandlung">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/RasterImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bv_ws2223/Antworten.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bv_ws2223/Antworten.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -70,7 +76,10 @@
       <workItem from="1670927252199" duration="85000" />
       <workItem from="1672667732902" duration="28000" />
       <workItem from="1672667974105" duration="27000" />
-      <workItem from="1672747147011" duration="604000" />
+      <workItem from="1672747147011" duration="987000" />
+      <workItem from="1672924667267" duration="157000" />
+      <workItem from="1672926669869" duration="517000" />
+      <workItem from="1672930349817" duration="115000" />
     </task>
     <task id="LOCAL-00001" summary="BV4 curve and histo">
       <created>1669310589259</created>
@@ -93,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670522082728</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finih randbehandlung">
+      <created>1672747957409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672747957409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +130,7 @@
     <MESSAGE value="BV4 curve and histo" />
     <MESSAGE value="finish BV4" />
     <MESSAGE value="continue u5" />
-    <option name="LAST_COMMIT_MESSAGE" value="continue u5" />
+    <MESSAGE value="finih randbehandlung" />
+    <option name="LAST_COMMIT_MESSAGE" value="finih randbehandlung" />
   </component>
 </project>
