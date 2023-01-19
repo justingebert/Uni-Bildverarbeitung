@@ -56,15 +56,14 @@ public class GeometricTransform {
 		double s = perspectiveDistortion;
 
 
-
 		for(int yDst = 0; yDst < dst.height; yDst++){
 			for(int xDst = 0; xDst < dst.width; xDst++){
 
 				int xDstC = xDst - (dst.width/2);
 				int yDstC = yDst - (dst.height/2);
 
-				int ySrcC = (int) (yDstC/(cos-(yDstC*s*sin)));
-				int xSrcC = (int) (xDstC*(s*sin*ySrcC+1));
+				int ySrcC = (int) Math.round(yDstC/(cos-(yDstC*s*sin)));
+				int xSrcC = (int) Math.round(xDstC*(s*sin*ySrcC+1));
 
 				int xSrc = xSrcC  + (src.width/2);
 				int ySrc = ySrcC  + (src.height/2);
@@ -144,6 +143,12 @@ public class GeometricTransform {
 				int rgbB = 0;
 				int rgbC = 0;
 				int rgbD = 0;
+				if(ySrcFloor < 0 && xSrcFloor<0){
+					rgbA = 0xFFFFFFFF;
+					rgbB = src.argb[pos(xSrcFloor,ySrcFloor+1,src.width)];
+					rgbC = src.argb[pos(xSrcFloor+1,ySrcFloor,src.width)];
+					rgbD = src.argb[pos(xSrcFloor+1,ySrcFloor+1,src.width)];
+				}
 				if(ySrcFloor >= src.height-1 || xSrcFloor >= src.width-1 || ySrcFloor<0 || xSrcFloor<0){
 					rgbA = 0xFFFFFFFF;
 					rgbB = 0xFFFFFFFF;
