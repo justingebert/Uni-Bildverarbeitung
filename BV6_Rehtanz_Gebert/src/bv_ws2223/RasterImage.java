@@ -83,6 +83,7 @@ public class RasterImage {
 	public void convertToGray() {
 		
 		// TODO: convert the image to grayscale
+
 		
 	}
 

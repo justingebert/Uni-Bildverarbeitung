@@ -82,14 +82,36 @@ public class RasterImage {
 	public void convertToGray() {
 		
 		// TODO: convert the image to grayscale
+		for(int x = 0; x<width;x++){
+			for(int y = 0;y<height;y++){
+				int pos = y * width +x;
+				//argb[pos] = 0xffff0000;
+
+				int rgb = argb[pos];
+
+				int r =(rgb >> 16) & 0xff;
+				int g =(rgb >> 8) & 0xff;
+				int b =(rgb >> 0) & 0xff;
+
+				int avg = (r+g+b)/3;
+
+				r = avg;
+				g = avg;
+				b = avg;
+
+				argb[pos] = (0xFF<<24) | (r<<16) | (g<<8) | b;
+
+			}
+		}
 		
 	}
 	
 	public double getEntropy() {
-		
-		double entropy = Double.NaN;
-		
 		// TODO: calculate and return the entropy of the image
+		double entropy = Double.NaN;
+		Histogram histogram = new Histogram();
+		histogram.setImageRegion(this,0,0,this.width,this.height);
+		entropy = histogram.getEntropy();
 
 		return entropy;
 	}

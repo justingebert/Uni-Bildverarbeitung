@@ -94,7 +94,7 @@ public class DPCMCodec {
 				if (xOffset < 0) valuePrev = 128;
 				if (yOffset < 0) valuePrev = 128;
 
-				int e = valuePrev - value;
+				int e = value - valuePrev;
 				int eImage = e +128;
 
 				int eStrich = e;
